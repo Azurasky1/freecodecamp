@@ -25,5 +25,3 @@ var array = [
 ];
 
 var output = largestOfFour(array);
-
-console.log(output);

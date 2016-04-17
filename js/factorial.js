@@ -13,5 +13,3 @@ function factorialize(num) {
 
   return fact;
 }
-
-console.log(factorialize(5));

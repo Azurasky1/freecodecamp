@@ -10,5 +10,3 @@ function palindrome(str) {
 
   return palindrome === str;
 }
-
-console.log(palindrome('A man, a plan, a canal. Panama'));

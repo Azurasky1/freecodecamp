@@ -1,49 +1,18 @@
-var personen = (function() {
-  var data = {};
-
-  function init(a, b, c, d) {
-    data.firstName = a;
-    data.lastName = b;
-    data.age = c;
-    data.eyeColor = d;
-  }
-
-  function print() {
-    console.log(data);
-  }
-
-  function nationality(a) {
-    data.nationality = a;
-  }
-
-  return {
-    init: init,
-    print: print,
-    nationality: nationality
-  };
-})();
-
-personen.init('walter', 'bishops', 62, 'brown');
-personen.print();
-personen.nationality('gb');
-personen.print();
-
-
-function Person() {
-  this.data = {};
-
-  this.print = function() {
-    return this.data;
-  };
+function pippo() {
+  this.name = '';
 }
 
-Person.prototype.name = function(a) {
-  if (a) {
-    this.data.name = a;
-  }
+pippo.prototype.setName = function(name) {
+  this.name = name || 'no name';
 };
 
-var x = new Person();
-console.log(x.print());
-x.name();
-console.log(x.print());
+pippo.prototype.show = function() {
+  return this.name;
+  // console.log(this.name);
+};
+
+// var sonny = new pippo('sonny')
+// sonny.show();
+
+var test = pippo.prototype.show.apply({name: 'sonny'});
+console.log(test);

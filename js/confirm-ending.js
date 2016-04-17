@@ -15,5 +15,3 @@ function confirmEnding(str, target) {
 }
 
 var output = confirmEnding('He has to give me a new name', 'name');
-
-console.log(output);
