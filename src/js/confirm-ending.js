@@ -14,4 +14,4 @@ function confirmEnding(str, target) {
   return match;
 }
 
-var output = confirmEnding('He has to give me a new name', 'name');
+module.exports = confirmEnding;

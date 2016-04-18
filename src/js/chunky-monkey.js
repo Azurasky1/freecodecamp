@@ -13,6 +13,4 @@ function chunkArrayInGroups(arr, size) {
   return chunk;
 }
 
-var res = chunkArrayInGroups(['a', 'b', 'c', 'd'], 2);
-
-console.log(res);
+module.exports = chunkArrayInGroups;
