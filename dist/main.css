@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(234, 245, 244);
+}
+
+#module__template {
+  display: none;
+}
+
+.module {
+  margin: 20px 35px;
+  padding: 10px 15px 20px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+  background-color: #fff;
+}
+
+.module h2 {
+}
+
+.module .module__copy {
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.module__tests--test {
+  padding: 5px 15px;
+  margin: 10px 0;
+  background-color: rgba(238, 237, 237, .4);
+}
