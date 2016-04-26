@@ -3,12 +3,14 @@
  * Return an empty string if num is a negative number.
  */
  function repeatStringNumTimes(str, num) {
-   if(num < 0) {
+   if (num < 0) {
      return '';
    }
-   if(num > 0) {
+   if (num > 0) {
      return str.repeat(num);
-   } else {
-     return str;
    }
+
+   return str;
  }
+
+module.exports = repeatStringNumTimes;

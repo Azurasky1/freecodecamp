@@ -10,3 +10,5 @@ function titleCase(str) {
 
   return str;
 }
+
+module.exports = titleCase;

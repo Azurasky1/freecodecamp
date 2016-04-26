@@ -2,15 +2,14 @@
  * Write a function that splits an array (first argument) into groups the length of size (second argument)
  * and returns them as a two-dimensional array.
  */
-function chunkArrayInGroups(arr, size) {
-  var temp = [];
-  var chunk = [];
+function chunkArrayInGroups(arr, chunks) {
+  var newArr = [];
 
-  temp = arr.slice(0, size);
+  for (var i = 0; i < arr.length; i += chunks) {
+    newArr.push(arr.slice(i, i + chunks));
+  }
 
-  chunk.push(temp);
-
-  return chunk;
+  return newArr;
 }
 
 module.exports = chunkArrayInGroups;

@@ -24,17 +24,4 @@ function validatePassword(password) {
   return passingValidations >= 2;
 }
 
-// too short
-console.log('1: ', validatePassword('123abc'));
-// lowercases and numbers
-console.log('2: ', validatePassword('123abcdefg'));
-// loweecases and symbols
-console.log('3: ', validatePassword('!adsasdsadabcdefg'));
-// symbols and numbers
-console.log('4: ', validatePassword('!12121121212'));
-// symbols and uppercases
-console.log('5: ', validatePassword('AASASAAASAS@@@'));
-// lowercases and uppercases
-console.log('5: ', validatePassword('AASASAAASASasasdasd'));
-
 module.exports = validatePassword;

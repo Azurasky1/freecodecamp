@@ -10,3 +10,5 @@ function palindrome(str) {
 
   return palindrome === str;
 }
+
+module.exports = palindrome;

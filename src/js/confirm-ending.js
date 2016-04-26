@@ -8,7 +8,7 @@ function confirmEnding(str, target) {
   target = target.split('').reverse().join('');
 
   for (i = 0; i < target.length; i++) {
-    match = target[i] ===  str[str.length - 1 - i];
+    match = target[i] === str[str.length - 1 - i];
   }
 
   return match;
