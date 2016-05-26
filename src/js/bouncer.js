@@ -3,6 +3,8 @@
  * Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
  */
 function bouncer(arr) {
+  'use strict';
+
   var newArr = [];
 
   for (var i = 0; i < arr.length; i++) {

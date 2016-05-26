@@ -7,14 +7,12 @@ function destroyer(arr) {
   'use strict';
 
   for (var i in arguments) {
-    if (!arguments.hasOwnProperty(i) || i == 0) {
+    if (!arguments.hasOwnProperty(i) || i === 0) {
       continue;
     }
-
-    console.log(arguments[i]);
   }
 
   return arr;
 }
 
-destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+module.exports = destroyer;
