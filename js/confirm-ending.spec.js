@@ -8,16 +8,12 @@ describe('Module: confirmEnding', function() {
         '(second argument, target).', function() {
     it('confirmEnding("Bastian", "n") ' +
         'should return true.', function() {
-      var result = true;
-
-      expect(confirmEnding('Bastian', 'n')).to.deep.equal(result);
+      expect(confirmEnding('Bastian', 'n')).to.be.true;
     });
 
     it('confirmEnding("Connor", "n") ' +
         'should return false.', function() {
-      var result = false;
-
-      expect(confirmEnding('Connor', 'n')).to.equal(result);
+      expect(confirmEnding('Connor', 'n')).to.be.false;
     });
 
     it('confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification") ' +
