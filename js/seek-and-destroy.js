@@ -4,15 +4,14 @@
  * Remove all elements from the initial array that are of the same value as these arguments.
  */
 function destroyer(arr) {
-  'use strict';
+  var args = [].slice.apply(arguments);
 
-  for (var i in arguments) {
-    if (!arguments.hasOwnProperty(i) || i === 0) {
-      continue;
-    }
-  }
+  // remove `arr` from args
+  args.shift();
 
-  return arr;
+  return arr.filter(function(i) {
+    return args.indexOf(i) === -1;
+  });
 }
 
 module.exports = destroyer;
