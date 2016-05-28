@@ -34,10 +34,8 @@
   "xo": {
     "space": 2,
     "rules": {
-      "space-before-function-paren": [
-        2,
-        "never"
-      ]
+      "space-before-function-paren": [2, "never"],
+      "no-unused-expressions": 0
     },
     "envs": [
       "node",
