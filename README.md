@@ -6,10 +6,10 @@
 
 *   Install all the dependencies with `npm install`.
 
-*   Run all the unit tests with `npm test`and generate an html report inside
-    `mochawesome-reports`
+*   Run all the unit tests with `npm test`and generate a fancy html report inside
+    `reports/reports.html`
 
-**note**  All the unit tests are inside the `src/js` and marked with
+**note**  All the unit tests are inside the `js` folder and marked with
 the `*.spec.js` extension
 
 ## License

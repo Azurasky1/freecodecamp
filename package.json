@@ -29,7 +29,7 @@
     "src"
   ],
   "scripts": {
-    "test": "xo src/**/* && mocha ./src/js/*.spec.js --recursive --reporter mochawesome"
+    "test": "xo ./**/*.js && mocha ./**/*.spec.js --reporter mochawesome --recursive --reporter-options reportDir=reports,reportName=reports"
   },
   "xo": {
     "space": 2,
