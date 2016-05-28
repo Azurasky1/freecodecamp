@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-var getIndexToIns = require('./get-index-to-ins');
+var getIndexToIns = require('./where-do-i-belong');
 
 describe('Module: getIndexToIns', function() {
   describe('Return the lowest index at which a value (second argument) ' +

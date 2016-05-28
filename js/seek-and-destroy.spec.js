@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-var destroyer = require('./destroyer');
+var destroyer = require('./seek-and-destroy');
 
 describe('Module: destroyer', function() {
   describe('You will be provided with an initial array (the first argument ' +
